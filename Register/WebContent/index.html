@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<style>
+div.ex {
+	text-align: right width:300px;
+	padding: 10px;
+	border: 5px solid red;
+	
+	background-color:pink
+	}
+</style>
+<form action="Servlet" method="POST">
+<h1>Registration form</h1>
+<div class="ex">
+<body>
+<table border="1" style="width: 50%" class="bg-light text-dark"> 
+<tr><td  class="text-primary">First Name:</td>
+<td><input type="text" name="firstname" pattern="[A-Z]{1}[a-z]{3,}" required/></td></tr>
+<tr><td class="text-primary">Last Name:</td>
+<td><input type="text" name="lastname"  pattern="[a-z]{3,}" required/></td></tr>
+<tr><td class="text-primary">Interested Domain</td></tr>
+<tr><td><input type="radio" name="domain" value="ece"> ECE</td>
+<td><input type="radio" name="domain" value="cse">CSE</td></tr>
+<tr><td class="text-primary">Enter Phone number</td><td><input type="text" name="number" value="9098*****" pattern="[0-9]{10}" required></td></tr>
+<tr><td><input type="submit" value="Register"></td></tr>
+</table>
+</form>
+</body>
+</html>
